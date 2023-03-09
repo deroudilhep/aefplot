@@ -16,8 +16,6 @@ Depends:
 LazyData: true
 Imports: 
     base,
-    data.table,
-    dplyr,
     ggplot2,
     ggpubr,
     grid,
