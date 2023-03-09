@@ -14,7 +14,7 @@ left_align <- function(plot_name, pieces) {
 create_footer <- function(source_name, logo_image_path) {
   footer <- grid::grobTree(grid::linesGrob(x = grid::unit(c(0, 1), "npc"), y = grid::unit(1.1, "npc")),
                            grid::textGrob(paste0("Source : ", source_name), x = 0.004, hjust = 0, gp = grid::gpar(fontfamily = "Calibri", fontsize = 16)),
-                           grid::rasterGrob(png::readPNG(logo_image_path), x = 0.944, width = 10, height = 10))
+                           grid::rasterGrob(png::readPNG(logo_image_path), x = 0.944, width = 1, height = 1))
   return(footer)
 }
 finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"), width_pixels = 640, height_pixels = 450, logo_image_path = file.path(system.file("extdata", package = 'aefplot'),"aef-info-logo-rgb.png")) {
