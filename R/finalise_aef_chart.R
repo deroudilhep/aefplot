@@ -21,7 +21,7 @@ finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path
   footer <- create_footer(source_name, logo_image_path)
   # Draw a left-aligned grid
   plot_left_aligned <- left_align(plot_name, c("subtitle", "title", "caption"))
-  plot_grid <- ggpubr::ggarrange(plot_left_aligned, footer, ncol = 1, nrow = 2, heights = c(1, 0.045/(height_pixels/450)))
+  plot_grid <- ggpubr::ggarrange(plot_left_aligned, footer, ncol = 1, nrow = 2, heights = c(1, 0.45/(height_pixels/450)))
   save_plot(plot_grid, width_pixels, height_pixels, save_filepath)
   # Return (invisibly) a copy of the graph. It can be assigned to a variable.
   invisible(plot_grid)
