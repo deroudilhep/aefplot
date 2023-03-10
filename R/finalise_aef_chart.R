@@ -12,16 +12,15 @@ left_align <- function(plot_name, pieces) {
 }
 # Create a footer for the chart
 create_footer <- function(source_name, logo_image_path) {
-  footer <- grid::grobTree(grid::linesGrob(x = grid::unit(c(0, 1), "npc"), y = grid::unit(1.1, "npc")),
-                           grid::textGrob(paste0("Source : ", source_name), x = 0.004, hjust = 0, gp = grid::gpar(fontfamily = "Calibri", fontsize = 16)),
-                           grid::rasterGrob(png::readPNG(logo_image_path), x = 0.944))
+  footer <- grid::grobTree(grid::textGrob(paste0("Source : ", source_name), x = 0.008, hjust = 0, gp = grid::gpar(fontfamily = "Calibri", fontface = "italic", fontsize = 12, col = "#908e95")),
+                           grid::rasterGrob(png::readPNG(logo_image_path), x = 0.97))
   return(footer)
 }
-finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"), width_pixels = 640, height_pixels = 450, logo_image_path = file.path(system.file("extdata", package = 'aefplot'),"aef-info-logo-rgb.png")) {
+finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"), width_pixels = 800, height_pixels = 600, logo_image_path = file.path(system.file("extdata", package = 'aefplot'),"aef-info-logo-rgb.png")) {
   footer <- create_footer(source_name, logo_image_path)
   # Draw a left-aligned grid
   plot_left_aligned <- left_align(plot_name, c("subtitle", "title", "caption"))
-  plot_grid <- ggpubr::ggarrange(plot_left_aligned, footer, ncol = 1, nrow = 2, heights = c(1, 0.45/(height_pixels/450)))
+  plot_grid <- ggpubr::ggarrange(plot_left_aligned, footer, ncol = 1, nrow = 2, heights = c(1, 0.080/(height_pixels/600)))
   save_plot(plot_grid, width_pixels, height_pixels, save_filepath)
   # Return (invisibly) a copy of the graph. It can be assigned to a variable.
   invisible(plot_grid)
