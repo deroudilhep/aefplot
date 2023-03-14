@@ -17,5 +17,6 @@ LazyData: true
 Imports: 
     ggplot2,
     ggpubr,
+    ggtext,
     grid,
     png
