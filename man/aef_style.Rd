@@ -13,6 +13,7 @@ A list of ggplot2 theme function parameters
 Apply AEF info style to a ggplot chart
 }
 \examples{
+library(ggplot2)
 sample_df <- fb_messages_sample_df
 chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
   geom_col(fill = sender_name) +
