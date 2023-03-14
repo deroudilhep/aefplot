@@ -31,9 +31,19 @@ create_footer <- function(source_name, logo_image_path) {
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
+#' sample_df <- fb_messages_sample_df
+#' chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
+#'   geom_col(aes(fill = sender_name)) +
+#'   scale_fill_manual(values = aefcolor_extended) +
+#'   labs(title = "This is a test graph",
+#'        subtitle = "With a nice subtitle",
+#'        caption = "And a nice caption") +
+#'   aef_style()
+#'
 #' finalise_aef_chart(plot_name = chart,
 #'                    source_name = "Super source",
-#'                    save_filepath = "filename.png")
+#'                    save_filepath = paste0(tempdir(), "/filename.png"))
 finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"), width_pixels = 800, height_pixels = 600, logo_image_path = file.path(system.file("extdata", package = 'aefplot'),"aef-info-logo-rgb.png")) {
   footer <- create_footer(source_name, logo_image_path)
   # Draw a left-aligned grid

@@ -35,7 +35,17 @@ This function saves the chart its given as an argument, with the correct guideli
 It will left align title, subtitle, caption and source, add the AEF info logo at the bottom right of the chart and save it to a sepcified location.
 }
 \examples{
+library(ggplot2)
+sample_df <- fb_messages_sample_df
+chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
+  geom_col(aes(fill = sender_name)) +
+  scale_fill_manual(values = aefcolor_extended) +
+  labs(title = "This is a test graph",
+       subtitle = "With a nice subtitle",
+       caption = "And a nice caption") +
+  aef_style()
+
 finalise_aef_chart(plot_name = chart,
                    source_name = "Super source",
-                   save_filepath = "filename.png")
+                   save_filepath = paste0(tempdir(), "/filename.png"))
 }
