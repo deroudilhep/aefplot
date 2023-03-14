@@ -1,3 +1,17 @@
+#' Apply AEF info style to a ggplot chart
+#'
+#' @return A list of ggplot2 theme function parameters
+#' @export
+#'
+#' @examples
+#' sample_df <- fb_messages_sample_df
+#' chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
+#'   geom_col(fill = sender_name) +
+#'   scale_fill_manual(values = aefcolor_extended) +
+#'   labs(title = "This is a test graph",
+#'        subtitle = "With a nice subtitle",
+#'        caption = "And a nice caption") +
+#'   aef_style()
 aef_style <- function() {
   font <- "Calibri"
   ggplot2::theme(

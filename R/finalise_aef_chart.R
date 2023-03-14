@@ -16,6 +16,24 @@ create_footer <- function(source_name, logo_image_path) {
                            grid::rasterGrob(png::readPNG(logo_image_path), x = 0.97))
   return(footer)
 }
+#' Finalise a ggplot chart to be published complying with AEF info standards
+#'
+#' This function saves the chart its given as an argument, with the correct guidelines for publication for an AEF info chart.
+#' It will left align title, subtitle, caption and source, add the AEF info logo at the bottom right of the chart and save it to a sepcified location.
+#' @param plot_name The variable name that holds the chart to be formatted and saved
+#' @param source_name The text that will come after "Source :" in the bottom left hand side of the chart
+#' @param save_filepath The exact file path where the chart will be saved, including
+#' @param width_pixels Width in pixels for the final chart. Default to 800.
+#' @param height_pixels Height in pixels for the final chart. Default to 600.
+#' @param logo_image_path File path to the logo that is to be used in the bottom right hand side of the chart. Default to AEF info logo. Must be a PNG file.
+#'
+#' @return (Invisibly) an updated ggpplot object
+#' @export
+#'
+#' @examples
+#' finalise_aef_chart(plot_name = chart,
+#'                    source_name = "Super source",
+#'                    save_filepath = "filename.png")
 finalise_aef_chart <- function(plot_name, source_name, save_filepath = file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"), width_pixels = 800, height_pixels = 600, logo_image_path = file.path(system.file("extdata", package = 'aefplot'),"aef-info-logo-rgb.png")) {
   footer <- create_footer(source_name, logo_image_path)
   # Draw a left-aligned grid
