@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# AEFPLOT <img src="man/figures/logo.jpg" align="right" height="90" />
+# AEFPLOT <img src="man/figures/hex_sticker.png" align="right" height="130" />
 
 <!-- badges: start -->
 
@@ -151,4 +151,4 @@ droite, et annoté avec la source `"Super Source"`.
 
 ## Auteur
 
-[@deroudilhep](mailto:pierre.deroudilhe@aefinfo.fr) @ aefinfo
+[@deroudilhep](mailto:pierre.deroudilhe@aefinfo.fr) @ AEF info

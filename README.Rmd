@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# AEFPLOT <img src="man/figures/logo.jpg" align="right" height="90" />
+# AEFPLOT <img src="man/figures/hex_sticker.png" align="right" height="130" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/deroudilhep/aefplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/deroudilhep/aefplot/actions/workflows/R-CMD-check.yaml)
@@ -120,4 +120,4 @@ Le code ci-dessus produira un graphique `filename.png`, à partir du graphique c
 
 ## Auteur
 
-[@deroudilhep](mailto:pierre.deroudilhe@aefinfo.fr) @ aefinfo
+[@deroudilhep](mailto:pierre.deroudilhe@aefinfo.fr) @ AEF info
