@@ -33,6 +33,15 @@ Si vous n’avez pas la librairie `devtools`, il faudra au préalable l’instal
 devtools::install_github("deroudilhep/aefplot")
 ```
 
+### La fonte Calibri
+
+Le *package* `aefplot` utilise la fonte Calibri pour créer des graphiques conformes à la charte AEF info. Le *package* ne chargera la fonte et ne pourra l'utiliser pour les graphiques que si celle-ci est déjà installée sur la machine de l'utilisateur. Si vous ne l'avez jamais fait, il faut au préalable utiliser une fois la fonction `font_import()` du *package* `extrafont`.
+
+```r
+# install.packages("extrafont")
+extrafont::font_import()
+```
+
 ## Utiliser les fonctions
 
 La librairie a deux fonctions : `aef_style()` et `finalise_aef_chart()`.

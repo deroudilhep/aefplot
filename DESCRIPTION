@@ -1,6 +1,6 @@
 Package: aefplot
 Title: HELPS CREATE GGPLOT CHARTS IN THE AEF INFO STYLE
-Version: 1.0.1
+Version: 1.1.0
 Authors@R: 
     person("Pierre", "Deroudilhe", , "pierre.deroudilhe@aefinfo.fr", role = c("aut", "cre"))
 Description: Provides two functions to help create and export ggplot charts in the French news agency AEF info data team style.

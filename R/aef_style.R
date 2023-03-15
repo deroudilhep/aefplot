@@ -14,7 +14,6 @@
 #'        caption = "And a nice caption") +
 #'   aef_style()
 aef_style <- function() {
-  extrafont::loadfonts()
   font <- "Calibri"
   ggplot2::theme(
     # Text format:
