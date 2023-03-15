@@ -19,7 +19,7 @@ finalise_aef_chart(
 
 \item{source_name}{The text that will come after "Source :" in the bottom left hand side of the chart}
 
-\item{save_filepath}{The exact file path where the chart will be saved, including}
+\item{save_filepath}{The exact file path where the chart will be saved, including the name and extension of the file}
 
 \item{width_pixels}{Width in pixels for the final chart. Default to 800.}
 

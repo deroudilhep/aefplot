@@ -22,7 +22,7 @@ create_footer <- function(source_name, logo_image_path) {
 #' It will left align title, subtitle, caption and source, add the AEF info logo at the bottom right of the chart and save it to a sepcified location.
 #' @param plot_name The variable name that holds the chart to be formatted and saved
 #' @param source_name The text that will come after "Source :" in the bottom left hand side of the chart
-#' @param save_filepath The exact file path where the chart will be saved, including
+#' @param save_filepath The exact file path where the chart will be saved, including the name and extension of the file
 #' @param width_pixels Width in pixels for the final chart. Default to 800.
 #' @param height_pixels Height in pixels for the final chart. Default to 600.
 #' @param logo_image_path File path to the logo that is to be used in the bottom right hand side of the chart. Default to AEF info logo. Must be a PNG file.
