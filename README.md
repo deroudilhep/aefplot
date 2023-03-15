@@ -32,9 +32,7 @@ devtools::install_github("deroudilhep/aefplot")
 
 La librairie a deux fonctions : `aef_style()` et `finalise_aef_chart()`.
 
-Des exemples de la façon d’utiliser les fonctions de cette librairie
-sont présents dans la section suivante. D’abord, un rapide tour
-d’horizon.
+Un rapide tour d’horizon.
 
 ### `aef_style()`
 
@@ -97,7 +95,12 @@ définis par défaut, à moins d’être écrasés au moment de l’appel de la
 fonction :
 
 ``` r
-finalise_aef_chart(plot_name, source_name, save_filepath, width_pixels, height_pixels, logo_image_path)
+finalise_aef_chart(plot_name, 
+                   source_name, 
+                   save_filepath, 
+                   width_pixels, 
+                   height_pixels, 
+                   logo_image_path)
 ```
 
 - `plot_name`, la variable qui contient le graphique ggplot que l’on
@@ -105,8 +108,8 @@ finalise_aef_chart(plot_name, source_name, save_filepath, width_pixels, height_p
 - `source_name`, un texte qui viendra après `Source :` en bas à gauche
   du graphique ;
 - `save_filepath`, le chemin exact vers l’emplacement auquel on veut
-  exporter le graphique, y compris le nom et le format de l’export
-  (`graphique.png`) ;
+  exporter le graphique, y compris le nom et le format de l’export (ex.
+  : `graphique.png`) ;
 - `width_pixels`, la largeur du graphique exporté, 800 pixels par défaut
   ;
 - `height_pixels`, la hauteur du graphique exporté, 600 pixels par
