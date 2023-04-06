@@ -18,9 +18,9 @@ aef_style <- function() {
   ggplot2::theme(
     # Text format:
     # This sets the font, size, type and color of text for the chart's title
-    plot.title = ggtext::element_textbox_simple(family = font, size = 26, face = "bold", color = "#000000"),
+    plot.title = ggtext::element_textbox_simple(family = font, size = 24, face = "bold", color = "#000000"),
     # This sets the font, size, type and color of text for the chart's subtitle. Also this sets a margin between the title and the subtitle.
-    plot.subtitle = ggtext::element_textbox_simple(family = font, size = 18, color = "#000000", margin = ggplot2::margin(8, 0, 8, 0)),
+    plot.subtitle = ggtext::element_textbox_simple(family = font, size = 16, color = "#000000", margin = ggplot2::margin(8, 0, 8, 0)),
     # This sets the font, size, type and color of text for the chart's caption
     plot.caption = ggtext::element_textbox_simple(hjust = 0, family = font, size = 14, face = "italic", color = "#5e6169"),
     # Legend format:
