@@ -1,5 +1,5 @@
 Package: aefplot
-Title: HELPS CREATE GGPLOT CHARTS IN THE AEF INFO STYLE
+Title: Helps Create ggplot Charts in the AEF info Style
 Version: 1.1.0
 Authors@R: 
     person("Pierre", "Deroudilhe", , "pierre.deroudilhe@aefinfo.fr", role = c("aut", "cre"))
