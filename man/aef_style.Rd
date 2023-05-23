@@ -2,7 +2,7 @@
 % Please edit documentation in R/aef_style.R
 \name{aef_style}
 \alias{aef_style}
-\title{Apply AEF info style to a ggplot chart}
+\title{AEF style}
 \usage{
 aef_style()
 }
@@ -18,8 +18,10 @@ sample_df <- fb_messages_sample_df
 chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
   geom_col(aes(fill = sender_name)) +
   scale_fill_manual(values = aefcolor_extended) +
-  labs(title = "This is a test graph",
-       subtitle = "With a nice subtitle",
-       caption = "And a nice caption") +
+  labs(
+    title = "This is a test graph",
+    subtitle = "With a nice subtitle",
+    caption = "And a nice caption"
+  ) +
   aef_style()
 }

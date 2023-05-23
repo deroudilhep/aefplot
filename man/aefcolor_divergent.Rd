@@ -17,6 +17,7 @@ A character vector of length 4
 aefcolor_divergent
 }
 \description{
-Divergent color palette from all the palettes set by the French news agency AEF info graphic team.
+Divergent color palette from all the palettes set by the French
+news agency AEF info graphic team.
 }
 \keyword{datasets}

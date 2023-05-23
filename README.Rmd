@@ -78,9 +78,11 @@ chart <- ggplot(sample_df, aes(x = sender_name, y = messages)) +
   geom_col(aes(fill = sender_name)) +
   scale_fill_manual(values = aefcolor_extended) +
   guides(fill = guide_legend(byrow = TRUE)) +
-  labs(title = "This is a test graph",
-       subtitle = "With a nice subtitle",
-       caption = "And a nice caption") +
+  labs(
+    title = "This is a test graph",
+    subtitle = "With a nice subtitle",
+    caption = "And a nice caption"
+  ) +
   aef_style()
 ```
 
@@ -109,9 +111,11 @@ finalise_aef_chart(plot_name,
 Exemple d’utilisation standard de la fonction `finalise_aef_plot()`, après avoir finalisé le graphique, lui avoir donné titre et sous-titre et appliqué le thème AEF info grâce à la fonction `aef_style()` :
 
 ```{r finalise_aef_chart example}
-finalise_aef_chart(plot_name = chart,
-                   source_name = "Super source",
-                   save_filepath = paste0(tempdir(), "/filename.png"))
+finalise_aef_chart(
+  plot_name = chart,
+  source_name = "Super source",
+  save_filepath = paste0(tempdir(), "/filename.png")
+)
 ```
 
 ![](man/figures/filename.png)

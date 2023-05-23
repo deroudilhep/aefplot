@@ -1,6 +1,7 @@
 #' AEF info color palettes: divergent
 #'
-#' Divergent color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Divergent color palette from all the palettes set by the French
+#'   news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_divergent`
 #' A character vector of length 4
@@ -9,7 +10,8 @@
 
 #' AEF info color palettes: extended
 #'
-#' Extended color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Extended color palette from all the palettes set by the French
+#'   news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_extended`
 #' A character vector of length 20
@@ -18,7 +20,8 @@
 
 #' AEF info color palettes: gradient blue
 #'
-#' Blue gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Blue gradient color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_gradientblue`
 #' A character vector of length 5
@@ -27,7 +30,8 @@
 
 #' AEF info color palettes: gradient green
 #'
-#' Green gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Green gradient color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_gradientgreen`
 #' A character vector of length 5
@@ -36,7 +40,8 @@
 
 #' AEF info color palettes: gradient orange
 #'
-#' Orange gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Orange gradient color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_gradientorange`
 #' A character vector of length 5
@@ -45,7 +50,8 @@
 
 #' AEF info color palettes: gradient red
 #'
-#' Red gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Red gradient color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_gradientred`
 #' A character vector of length 5
@@ -54,7 +60,8 @@
 
 #' AEF info color palettes: gradient violet
 #'
-#' Violet gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Violet gradient color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_gradientviolet`
 #' A character vector of length 5
@@ -63,7 +70,8 @@
 
 #' AEF info color palettes: main colors
 #'
-#' Main color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Main color palette from all the palettes set by the French
+#'   news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_main`
 #' A character vector of length 2
@@ -72,7 +80,8 @@
 
 #' AEF info color palettes: recommended
 #'
-#' Recommended color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Recommended color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_recommended`
 #' A character vector of length 6
@@ -81,7 +90,8 @@
 
 #' AEF info color palettes: secondary
 #'
-#' Secondary color palette from all the palettes set by the French news agency AEF info graphic team.
+#' @description Secondary color palette from all the palettes set by the
+#'   French news agency AEF info graphic team.
 #'
 #' @format ## `aefcolor_secondary`
 #' A character vector of length 5

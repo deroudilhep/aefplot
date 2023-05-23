@@ -17,6 +17,7 @@ A character vector of length 5
 aefcolor_gradientblue
 }
 \description{
-Blue gradient color palette from all the palettes set by the French news agency AEF info graphic team.
+Blue gradient color palette from all the palettes set by the
+French news agency AEF info graphic team.
 }
 \keyword{datasets}

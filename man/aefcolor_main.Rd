@@ -17,6 +17,7 @@ A character vector of length 2
 aefcolor_main
 }
 \description{
-Main color palette from all the palettes set by the French news agency AEF info graphic team.
+Main color palette from all the palettes set by the French
+news agency AEF info graphic team.
 }
 \keyword{datasets}
