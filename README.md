@@ -111,12 +111,14 @@ définis par défaut, à moins d’être écrasés au moment de l’appel de la
 fonction :
 
 ``` r
-finalise_aef_chart(plot_name, 
-                   source_name, 
-                   save_filepath, 
-                   width_pixels, 
-                   height_pixels, 
-                   logo_image_path)
+finalise_aef_chart(
+  plot_name,
+  source_name,
+  save_filepath,
+  width_pixels,
+  height_pixels,
+  logo_image_path
+)
 ```
 
 - `plot_name`, la variable qui contient le graphique ggplot que l’on
