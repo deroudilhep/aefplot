@@ -23,20 +23,20 @@ aef_style <- function() {
     # Text format
     plot.title = ggtext::element_textbox_simple(
       family = font,
-      size = 24,
+      size = 18,
       face = "bold",
       color = "#000000"
     ),
     plot.subtitle = ggtext::element_textbox_simple(
       family = font,
-      size = 16,
+      size = 14,
       color = "#000000",
       margin = ggplot2::margin(8, 0, 8, 0)
     ),
     plot.caption = ggtext::element_textbox_simple(
       hjust = 0,
       family = font,
-      size = 14,
+      size = 12,
       face = "italic",
       color = "#5e6169"
     ),
@@ -49,14 +49,14 @@ aef_style <- function() {
     legend.key = ggplot2::element_blank(),
     legend.text = ggplot2::element_text(
       family = font,
-      size = 14,
+      size = 11,
       color = "#000000"
     ),
     # Axis format
     axis.title = ggplot2::element_blank(),
     axis.text = ggplot2::element_text(
       family = font,
-      size = 14,
+      size = 11,
       color = "#000000"
     ),
     axis.text.x = ggplot2::element_text(
@@ -73,7 +73,8 @@ aef_style <- function() {
     strip.background = ggplot2::element_rect(fill = "#ffffff"),
     strip.text = ggplot2::element_text(
       family = font,
-      size = 14,
+      face = "bold"
+      size = 11,
       color = "#000000",
       hjust = 0
     )
