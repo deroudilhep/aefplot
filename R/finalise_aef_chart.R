@@ -98,7 +98,7 @@ create_footer <- function(source_name, logo_image_path) {
       gp = grid::gpar(
         fontfamily = "Calibri",
         fontface = "italic",
-        fontsize = 12,
+        fontsize = 11,
         col = "#908e95"
       )
     ),
