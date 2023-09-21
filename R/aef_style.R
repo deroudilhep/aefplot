@@ -49,14 +49,14 @@ aef_style <- function() {
     legend.key = ggplot2::element_blank(),
     legend.text = ggplot2::element_text(
       family = font,
-      size = 11,
+      size = 12,
       color = "#000000"
     ),
     # Axis format
     axis.title = ggplot2::element_blank(),
     axis.text = ggplot2::element_text(
       family = font,
-      size = 11,
+      size = 12,
       color = "#000000"
     ),
     axis.text.x = ggplot2::element_text(
@@ -74,7 +74,7 @@ aef_style <- function() {
     strip.text = ggplot2::element_text(
       family = font,
       face = "bold",
-      size = 11,
+      size = 14,
       color = "#000000",
       hjust = 0
     )
