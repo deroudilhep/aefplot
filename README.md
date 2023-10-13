@@ -155,6 +155,9 @@ graphique contenu dans la variable `graph`. Le graphique fera 800 pixels
 de large sur 600 pixels de haut, avec le logo d’AEF info inséré en bas à
 droite, et annoté avec la source `"Super Source"`.
 
-## Auteur
+## Auteur et licence
 
-[@deroudilhep](mailto:pierre.deroudilhe@aefinfo.fr) @ AEF info
+**Auteur :** [@deroudilhep](https://github.com/deroudilhep) pour AEF info
+
+**Licence :** [MIT](https://choosealicense.com/licenses/mit/)
+
