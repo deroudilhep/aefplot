@@ -6,7 +6,12 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/deroudilhep/aefplot/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/deroudilhep/aefplot/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
+
+**Attention ! La charte graphique d'AEF info a changée en 2025 et les 
+styles produits par les fonctions de cette librairie ne sont plus 
+d'actualité.**
 
 Salut ! Ce *repository* contient les fonctions de la librairie R
 `aefplot`. Une fois installée localement, cette librairie offre deux
